@@ -1467,19 +1467,29 @@ canvas#bg-canvas {
     
     .hero-section {
         height: 100dvh;
-        min-height: 560px;
+        min-height: 620px;
     }
     .hero-name-heading {
-        top: 32%;
-        font-size: clamp(2.8rem, 14vw, 5.5rem);
+        top: 35%;
+        font-size: clamp(2.8rem, 13.5vw, 5.5rem);
     }
     
     .hero-info-card { 
-        left: 5%; 
-        bottom: 5%; 
+        position: absolute;
+        bottom: 3.5%; 
+        left: 50%; 
+        transform: translateX(-50%);
         width: 90%; 
-        max-width: 90%; 
+        max-width: 440px; 
         text-align: center; 
+        z-index: 5;
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        padding: 1.1rem 1rem;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
     .hero-badge-pill { margin: 0 auto 0.6rem; }
     .hero-info-card h2 { font-size: clamp(1.4rem, 5.2vw, 1.8rem); }

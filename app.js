@@ -421,20 +421,28 @@ function resize() {
     const visibleWidth = visibleHeight * camera.aspect;
 
     const imgAspect = imageAspectRatio;
-    const targetHeight = visibleHeight * 0.78;
-    const targetWidth = targetHeight * imgAspect;
 
-    if (visibleWidth * 0.95 < targetWidth) {
-        const mobileWidth = visibleWidth * 0.92;
-        portraitMesh.scale.set(mobileWidth, mobileWidth / imgAspect, 1.0);
-    } else {
+    if (width <= 768) {
+        // Mobile screen layout: Compact height and position in upper-middle behind GAU TAM
+        const targetHeight = visibleHeight * 0.44;
+        const targetWidth = targetHeight * imgAspect;
         portraitMesh.scale.set(targetWidth, targetHeight, 1.0);
+        portraitBaseY = visibleHeight * 0.08;
+    } else {
+        // Desktop screen layout
+        const targetHeight = visibleHeight * 0.78;
+        const targetWidth = targetHeight * imgAspect;
+
+        if (visibleWidth * 0.95 < targetWidth) {
+            const mobileWidth = visibleWidth * 0.92;
+            portraitMesh.scale.set(mobileWidth, mobileWidth / imgAspect, 1.0);
+        } else {
+            portraitMesh.scale.set(targetWidth, targetHeight, 1.0);
+        }
+        portraitBaseY = -visibleHeight / 2.0 + portraitMesh.scale.y / 2.0;
     }
 
-    // Align base of portrait nicely with viewport bottom
-    portraitBaseY = -visibleHeight / 2.0 + portraitMesh.scale.y / 2.0;
     portraitMesh.position.y = portraitBaseY;
-
     portraitMaterial.uniforms.u_planeSize.value.set(portraitMesh.scale.x, portraitMesh.scale.y);
     portraitMaterial.uniforms.u_resolution.value.set(width, height);
 }
