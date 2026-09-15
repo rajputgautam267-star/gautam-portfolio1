@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAUTAM | Full Stack AI Developer & Creative Engineer</title>
+    
+    <!-- Meta tags for social preview -->
+    <meta name="description" content="Portfolio of Gautam - Full Stack Developer, AI Engineer & Creative Technologist. Specializing in RAG, Computer Vision, Java Full Stack, and modern UI/UX experiences.">
+    <meta name="keywords" content="Gautam, Full Stack Developer, AI Engineer, Portfolio, Three.js, WebGL, GSAP, RAG, Python, Java">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="nav-container">
+        <a href="#" class="nav-brand hover-target">GAUTAM.</a>
+        
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span>Available for Opportunities</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#projects" class="hover-target">Work <span class="nav-count">[03]</span></a></li>
+            <li><a href="#about" class="hover-target">About</a></li>
+            <li><a href="#architecture" class="hover-target">Architecture</a></li>
+            <li><a href="#skills" class="hover-target">Skills</a></li>
+            <li><a href="#achievements" class="hover-target">Honors</a></li>
+            <li><a href="#contact" class="hover-target">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="nav-resume-btn hover-target" onclick="openResumeModal()">Resume 📄</button>
+            <a href="#contact" class="nav-cta hover-target">Let's Talk ↗</a>
+        </div>
+    </header>
+
+    <!-- MAIN PAGE WRAPPER (For Lenis Scroll Engine) -->
+    <div class="main-wrapper">
+        
+        <!-- CHAPTER 01: CINEMATIC WEBGL HERO -->
+        <section class="hero-section">
+            
+            <!-- WebGL Canvas for Interactive Dual-Portrait Spotlight Reveal & Floating 3D Spark Constellation -->
+            <canvas id="webgl-canvas"></canvas>
+            
+            <!-- WebGL Canvas for Volumetric Atmosphere, Simplex Noise & Fog Shaders -->
+            <canvas id="bg-canvas"></canvas>
+
+            <!-- Sandwiched Kinetic Display Typography (Outline GAU + Solid TAM Layers) -->
+            <h1 class="hero-name-heading">
+                <span class="outline">GAU</span><span class="fill">TAM</span>
+            </h1>
+
+            <!-- Left Info Panel -->
+            <div class="hero-info-card">
+                <div class="hero-badge-pill">
+                    <span>⚡ Full Stack & AI Engineer</span>
+                </div>
+                <h2>Engineering intelligent systems with refined visual impact.</h2>
+                <p>Computer Science Engineer specializing in RAG architectures, computer vision safety systems, full-stack Java/Node.js, and intuitive UI/UX design.</p>
+                
+                <div class="hero-btn-group">
+                    <a href="#contact" class="btn-collaborate hover-target">Let's collaborate ↗</a>
+                    <a href="#projects" class="btn-outline-explore hover-target">View Projects ↓</a>
+                </div>
+            </div>
+
+            <!-- Right Social Pills -->
+            <div class="hero-social-pills">
+                <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" class="social-pill hover-target">
+                    <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/gautam-186678158" target="_blank" rel="noopener noreferrer" class="social-pill hover-target">
+                    <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:rajputgautam267@gmail.com" class="social-pill hover-target">
+                    <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+                <a href="tel:+917303879443" class="social-pill hover-target">
+                    <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +91 7303879443
+                </a>
+            </div>
+
+            <!-- Instruction Prompt -->
+            <div class="installation-overlay">
+                <div class="instruction-prompt">Move cursor over portrait to reveal color</div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 02: MANIFESTO -->
+        <section class="manifesto-sec">
+            <div class="manifesto-label">
+                <span>[ 01 // Engineering Ethos ]</span>
+            </div>
+            <h2 class="manifesto-text">
+                I DON'T JUST WRITE CODE.<br>
+                I ENGINEER INTELLIGENT SYSTEMS.<br>
+                WHERE DEEP ALGORITHMIC LOGIC<br>
+                MEETS FLUID CREATIVE DESIGN.
+            </h2>
+        </section>
+
+        <!-- CHAPTER 03: ABOUT & EDUCATION -->
+        <section class="about-sec" id="about">
+            <div class="about-portrait-wrap">
+                <div class="about-portrait-card">
+                    <img src="assets/about-portrait.jpg" class="about-portrait" alt="Gautam - Editorial Portrait">
+                    <div class="about-portrait-meta">
+                        <div class="about-meta-col">
+                            <h4>GAUTAM</h4>
+                            <span>Full Stack & AI Engineer</span>
+                        </div>
+                        <div class="about-edu-tag">B.Tech CSE '27</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="section-meta-pill">[ 02 // Profile & Philosophy ]</div>
+                <h3 class="about-statement reveal-text">
+                    BRIDGING <em>SYSTEMS STABILITY</em>, <em>GENERATIVE AI</em> AND <em>VISUAL IMPACT</em>.
+                </h3>
+                
+                <div class="about-body">
+                    <p>I am a Computer Science and Engineering student at <strong>GITA Autonomous College, Bhubaneswar</strong> (Current CGPA: <strong>8.12</strong>, 2023–2027), driven by building resilient, production-ready systems that solve real-world problems.</p>
+                    <p>My engineering stack bridges Full Stack Java, Python, Node.js, and modern AI architectures. From orchestrating <strong>RAG knowledge assistants</strong> using Gemini 2.5 Flash, LangChain, and ChromaDB to training <strong>computer vision models</strong> for road collision prevention, I architect software that performs under demanding real-time conditions.</p>
+                    <p>At the same time, I bring a sharp visual instinct developed through <strong>UI/UX design</strong> and <strong>motion video editing</strong> (Adobe After Effects, Filmora). Whether structuring microservices in Docker or crafting fluid micro-interactions, I treat software engineering as an art of precision.</p>
+                </div>
+
+                <div class="about-highlights-grid">
+                    <div class="highlight-card">
+                        <div class="h-title">Academic Base</div>
+                        <div class="h-val">GITA Autonomous College</div>
+                        <div class="h-sub">B.Tech in CSE (2023 – 2027) · CGPA: 8.12</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="h-title">Location & Hub</div>
+                        <div class="h-val">Delhi & Bhubaneswar</div>
+                        <div class="h-sub">Open to remote & on-site opportunities</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="h-title">Languages Spoken</div>
+                        <div class="h-val">English · Hindi · Odia</div>
+                        <div class="h-sub">Multilingual communicator</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="h-title">Core Disciplines</div>
+                        <div class="h-val">Full Stack & AI/CV</div>
+                        <div class="h-sub">DSA, RAG Pipelines & UI/UX Design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 04: FEATURED PROJECTS (STICKY PANELS) -->
+        <section class="projects-sec" id="projects">
+            <div class="projects-sec-header">
+                <div class="section-meta-pill">[ 03 // Selected Works ]</div>
+                <h2 class="reveal-text">ENGINEERED PROJECTS</h2>
+            </div>
+
+            <!-- Project 01: AI Helpdesk Agent -->
+            <div class="project-panel">
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-number">01</span>
+                        <span>Generative AI · Enterprise RAG System</span>
+                    </div>
+                    <h2 class="project-title reveal-text">AI HELPDESK<br>AGENT</h2>
+                    <p class="project-desc">
+                        A document-grounded AI helpdesk assistant built with Gemini 2.5 Flash, LangChain, ChromaDB, FastAPI, and Streamlit. Features semantic chunk retrieval, dynamic query rewriting, source citations, confidence scoring, JWT/RBAC security, and automated Docker container deployment with 100% test coverage (13/13 passed).
+                    </p>
+                    <div class="project-tags">
+                        <span class="tech-tag">Gemini 2.5 Flash</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">JWT / RBAC</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" class="project-btn hover-target">Explore Architecture ↗</a>
+                </div>
+                <div class="project-mockup">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="AI Helpdesk Agent Project">
+                    <div class="mockup-overlay-badge">✓ 13/13 Automated Tests Passing</div>
+                </div>
+            </div>
+
+            <!-- Project 02: AI Crash Avoidance System -->
+            <div class="project-panel">
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-number">02</span>
+                        <span>Computer Vision · Real-Time Safety AI</span>
+                    </div>
+                    <h2 class="project-title reveal-text">AI CRASH<br>AVOIDANCE</h2>
+                    <p class="project-desc">
+                        An intelligent vehicle safety monitoring system engineered to detect imminent collision hazards and trigger sub-second early warnings. Employs advanced computer vision pipelines for real-time multi-obstacle tracking, vehicle proximity telemetry, and dynamic risk scoring to prevent traffic collisions.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Real-Time Detection</span>
+                        <span class="tech-tag">Risk Assessment</span>
+                        <span class="tech-tag">Edge Computing</span>
+                    </div>
+                    <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" class="project-btn hover-target">View System Details ↗</a>
+                </div>
+                <div class="project-mockup">
+                    <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=2070&auto=format&fit=crop" alt="AI Crash Avoidance Project">
+                    <div class="mockup-overlay-badge">⚡ Real-Time Collision Prevention</div>
+                </div>
+            </div>
+
+            <!-- Project 03: EduPlan AI -->
+            <div class="project-panel">
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-number">03</span>
+                        <span>Full Stack Web · Intelligent Scheduling</span>
+                    </div>
+                    <h2 class="project-title reveal-text">EDUPLAN<br>AI</h2>
+                    <p class="project-desc">
+                        An AI-driven study planning web platform that constructs personalized, adaptive study schedules based on student subjects, deadlines, priority weightings, and available hours. Designed with a clean, user-centric interface and AI-based recommendations to maximize academic productivity and consistency.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">UI/UX Design</span>
+                        <span class="tech-tag">Adaptive Algorithm</span>
+                    </div>
+                    <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" class="project-btn hover-target">View Implementation ↗</a>
+                </div>
+                <div class="project-mockup">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop" alt="EduPlan AI Project">
+                    <div class="mockup-overlay-badge">🎯 Adaptive Learning & Task Allocation</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 05: HIGH-SCALE SYSTEM ARCHITECTURE FLOW -->
+        <section class="flow-sec" id="architecture">
+            <div class="section-meta-pill" style="text-align: center; display: block;">[ 04 // Pipeline & Infrastructure ]</div>
+            <h2 class="flow-title reveal-text">End-to-End AI & Cloud Flow</h2>
+            <p class="flow-subtitle">How my applications process real-time queries, perform semantic vector searches, and deliver high-performance inferences securely.</p>
+            
+            <div class="flow-diagram">
+                <div class="flow-node">User Interface (Streamlit / Modern Web / Responsive UI)</div>
+                <div class="flow-line"><div class="flow-packet"></div></div>
+                <div class="flow-node">API Gateway & Security (FastAPI / Node.js + JWT/RBAC Auth)</div>
+                <div class="flow-line"><div class="flow-packet"></div></div>
+                <div class="flow-node highlighted">LLM Orchestration Layer (Gemini 2.5 Flash + LangChain Agents)</div>
+                <div class="flow-line"><div class="flow-packet"></div></div>
+                <div class="flow-node">Semantic Retrieval Engine (ChromaDB Vector Store + Embeddings)</div>
+                <div class="flow-line"><div class="flow-packet"></div></div>
+                <div class="flow-node">Relational & Document Storage (MySQL / Cache)</div>
+                <div class="flow-line"><div class="flow-packet"></div></div>
+                <div class="flow-node">Containerized Deployment (Docker Microservices & CI/CD Pipelines)</div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 06: TECHNICAL ARSENAL & CREATIVE SUITE -->
+        <section class="skills-sec" id="skills">
+            <div class="skills-sec-header">
+                <div class="section-meta-pill">[ 05 // Technical Capabilities ]</div>
+                <h2 class="reveal-text">SKILLS & CREATIVE STACK</h2>
+                <p>A multi-disciplinary blend of core computer science fundamentals, full-stack web engineering, cutting-edge AI pipelines, and multimedia design tools.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Card 1: Programming Languages -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">💻</span>
+                    <h3 class="cat-title">Programming</h3>
+                    <ul class="cat-items">
+                        <li>Java (Full Stack Development)</li>
+                        <li>Python (AI, Automation & Scripting)</li>
+                        <li>C (Low-Level Systems & Memory)</li>
+                        <li>JavaScript (ES6+, Modern Web)</li>
+                        <li>Shell Scripting (Bash / Automation)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: AI, ML & Data -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">🧠</span>
+                    <h3 class="cat-title">AI & Data Engineering</h3>
+                    <ul class="cat-items">
+                        <li>Gemini 2.5 Flash & LLM Integration</li>
+                        <li>LangChain Agentic Pipelines</li>
+                        <li>ChromaDB Vector Database</li>
+                        <li>RAG Semantic Retrieval & Citations</li>
+                        <li>Computer Vision & Obstacle Detection</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Web & Backend -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">🌐</span>
+                    <h3 class="cat-title">Web & Backend</h3>
+                    <ul class="cat-items">
+                        <li>Node.js & Express Architecture</li>
+                        <li>FastAPI High-Performance APIs</li>
+                        <li>RESTful Web Services & Endpoints</li>
+                        <li>HTML5, CSS3 & Responsive Design</li>
+                        <li>Streamlit Interactive UI Framework</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Systems & DevOps -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">⚙️</span>
+                    <h3 class="cat-title">Core CS & DevOps</h3>
+                    <ul class="cat-items">
+                        <li>Data Structures & Algorithms (DSA)</li>
+                        <li>Algorithmic Toolbox & Optimization</li>
+                        <li>Operating Systems Architecture</li>
+                        <li>Docker Containerization</li>
+                        <li>Git & GitHub Version Control</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5: Creative & Motion -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">🎨</span>
+                    <h3 class="cat-title">Design & Creative Suite</h3>
+                    <ul class="cat-items">
+                        <li>UI/UX Design & Wireframing</li>
+                        <li>Adobe After Effects (Motion Graphics)</li>
+                        <li>Wondershare Filmora (Video Editing)</li>
+                        <li>CapCut (Social Visual Storytelling)</li>
+                        <li>Social Media Brand Management</li>
+                    </ul>
+                </div>
+
+                <!-- Card 6: Soft Skills & Execution -->
+                <div class="skill-category-card">
+                    <span class="cat-icon">✨</span>
+                    <h3 class="cat-title">Professional Mindset</h3>
+                    <ul class="cat-items">
+                        <li>Clear Technical Communication</li>
+                        <li>Creative Problem Solving</li>
+                        <li>Critical Thinking & Analysis</li>
+                        <li>Cross-Functional Team Collaboration</li>
+                        <li>Rapid Learning & Adaptability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 07: IMPACT METRICS -->
+        <section class="numbers-sec">
+            <div class="num-block">
+                <div class="num-val" data-target="8.12" data-decimals="2">0</div>
+                <div class="num-label">Current CGPA</div>
+                <div class="num-sub">GITA Autonomous College</div>
+            </div>
+            <div class="num-block">
+                <div class="num-val" data-target="13" data-decimals="0">0</div>
+                <div class="num-label">Automated Tests Passed</div>
+                <div class="num-sub">100% Passing on AI Helpdesk</div>
+            </div>
+            <div class="num-block">
+                <div class="num-val" data-target="100" data-decimals="0">0</div>
+                <div class="num-label">Adobe AI Design Score</div>
+                <div class="num-sub">Certified with Perfect Score</div>
+            </div>
+            <div class="num-block">
+                <div class="num-val" data-target="3" data-decimals="0">0</div>
+                <div class="num-label">All-India Rank</div>
+                <div class="num-sub">Competitive Gaming Tournament</div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 08: CERTIFICATIONS & HONORS -->
+        <section class="certs-sec" id="achievements">
+            <div class="certs-header">
+                <div class="section-meta-pill">[ 06 // Credentials & Milestones ]</div>
+                <h2 class="reveal-text">CERTIFICATIONS & HONORS</h2>
+            </div>
+
+            <div class="certs-grid">
+                <!-- Cert 1: Adobe -->
+                <div class="cert-card">
+                    <div>
+                        <div class="cert-issuer">
+                            <span>Adobe</span>
+                            <span class="cert-score-badge">100% Score</span>
+                        </div>
+                        <h3 class="cert-title">Design Fundamentals with AI</h3>
+                        <p class="cert-desc">Mastered core principles of AI-driven visual design, human-centric interface composition, and creative digital workflows.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #888;">
+                        Issued: December 26, 2025
+                    </div>
+                </div>
+
+                <!-- Cert 2: UC San Diego -->
+                <div class="cert-card">
+                    <div>
+                        <div class="cert-issuer">
+                            <span>UC San Diego · Coursera</span>
+                            <span class="cert-score-badge">Verified Credential</span>
+                        </div>
+                        <h3 class="cert-title">Data Structures & Algorithms</h3>
+                        <p class="cert-desc">Rigorous training in advanced data structures, algorithmic complexity, tree graphs, heaps, dynamic programming, and search optimizations.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #888;">
+                        Issued: May 28, 2025
+                    </div>
+                </div>
+
+                <!-- Cert 3: Internshala -->
+                <div class="cert-card">
+                    <div>
+                        <div class="cert-issuer">
+                            <span>Internshala</span>
+                            <span class="cert-score-badge">98% Score</span>
+                        </div>
+                        <h3 class="cert-title">Full Stack Web Development with AI</h3>
+                        <p class="cert-desc">Comprehensive 8-week intensive certification covering end-to-end full-stack development, modern APIs, frontend frameworks, and AI tool integration.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #888;">
+                        Completed: 2024 · 8 Weeks
+                    </div>
+                </div>
+
+                <!-- Cert 4: Java Programming -->
+                <div class="cert-card">
+                    <div>
+                        <div class="cert-issuer">
+                            <span>Professional Certification</span>
+                            <span class="cert-score-badge">Certified</span>
+                        </div>
+                        <h3 class="cert-title">Java Programming Specialization</h3>
+                        <p class="cert-desc">Object-oriented architecture, multi-threading, JVM internals, collections framework, and full-stack enterprise Java application patterns.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #888;">
+                        Completed: September – October 2025
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership & Competitive Achievements -->
+            <div class="achievements-grid">
+                <div class="achieve-card">
+                    <div class="achieve-tag">Leadership Milestone</div>
+                    <h3 class="achieve-title">IIT Kharagpur Campus Ambassador</h3>
+                    <p class="achieve-desc">Represented IIT Kharagpur at college level. Spearheaded and organized <strong>Kshitij Kascade</strong>, coordinating extensive student participation, technical competitions, and campus-wide event activities.</p>
+                </div>
+
+                <div class="achieve-card">
+                    <div class="achieve-tag">National eSports Competition</div>
+                    <h3 class="achieve-title">3rd Rank in India — Honor of Kings</h3>
+                    <p class="achieve-desc">Competed against the top national eSports teams and secured <strong>3rd Rank in India</strong> in Honor of Kings competitive tournament, demonstrating split-second strategic decision making, teamwork, and tactical coordination under high pressure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 09: OUTRO & CONTACT -->
+        <section class="final-sec" id="contact">
+            <div class="final-bg-glow"></div>
+            
+            <div class="final-badge">[ 07 // Let's Connect ]</div>
+            <h1 class="final-title reveal-text">
+                Let's construct<br>the extraordinary
+            </h1>
+            <p class="final-sub">
+                I am currently open to Software Engineering, Full Stack, and AI/ML opportunities. Let's discuss how we can build high-performance, intelligent software together.
+            </p>
+
+            <div class="final-actions">
+                <a href="mailto:rajputgautam267@gmail.com" class="btn-primary-lg hover-target">Email Gautam ↗</a>
+                <button class="btn-secondary-lg hover-target" onclick="openResumeModal()">View Full Resume 📄</button>
+            </div>
+
+            <div class="final-contact-list">
+                <a href="mailto:rajputgautam267@gmail.com" class="hover-target">rajputgautam267@gmail.com</a>
+                <a href="tel:+917303879443" class="hover-target">+91 7303879443</a>
+                <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" class="hover-target">GitHub</a>
+                <a href="https://www.linkedin.com/in/gautam-186678158" target="_blank" rel="noopener noreferrer" class="hover-target">LinkedIn</a>
+                <span style="color: #888;">Delhi & Bhubaneswar, India</span>
+            </div>
+
+            <div class="footer-bar">
+                <div>© 2026 GAUTAM. Designed & Engineered with Three.js & GSAP.</div>
+                <div>Available for Internship & Full-time Roles</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- RESUME MODAL -->
+    <div class="modal-overlay" id="resume-modal" onclick="if(event.target === this) closeResumeModal()">
+        <div class="modal-container">
+            <button class="modal-close-btn hover-target" onclick="closeResumeModal()">✕</button>
+            
+            <div style="border-bottom: 2px solid #111; padding-bottom: 1.5rem; margin-bottom: 2rem;">
+                <h2 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; text-transform: uppercase;">GAUTAM</h2>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #555; margin-top: 0.5rem; line-height: 1.8;">
+                    📞 <a href="tel:+917303879443" style="color: inherit; text-decoration: none;">+91 7303879443</a> &nbsp;|&nbsp; 
+                    ✉️ <a href="mailto:rajputgautam267@gmail.com" style="color: inherit; text-decoration: none;">rajputgautam267@gmail.com</a> &nbsp;|&nbsp; 
+                    <a href="https://www.linkedin.com/in/gautam-186678158" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">LinkedIn ↗</a> &nbsp;|&nbsp; 
+                    <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">GitHub ↗</a> &nbsp;|&nbsp; 
+                    📍 Delhi, India
+                </div>
+                <p style="font-size: 0.95rem; color: #444; margin-top: 1rem; line-height: 1.6;">
+                    Creative and versatile Computer Science engineering student with skills in UI/UX design, web development, video editing, and social media management. Passionate about creating user-friendly digital experiences, engaging visual content, and innovative web solutions. Strong problem-solving, creativity, and communication skills with a willingness to learn and contribute to dynamic projects.
+                </p>
+            </div>
+
+            <div class="resume-section-title">Education</div>
+            <div style="margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.05rem;">
+                    <span>GITA Autonomous College, Bhubaneswar</span>
+                    <span style="font-family: var(--font-mono); color: var(--accent-color);">2023 – 2027</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; color: #555; font-size: 0.92rem; margin-top: 0.2rem;">
+                    <span>Bachelor of Technology in Computer Science and Engineering</span>
+                    <span>Bhubaneswar, Odisha</span>
+                </div>
+                <div style="font-family: var(--font-mono); font-weight: 600; color: #222; margin-top: 0.4rem;">
+                    Current CGPA: 8.12
+                </div>
+            </div>
+
+            <div class="resume-section-title">Technical Skills</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem; color: #444;">
+                <li><strong>Programming Languages:</strong> Java (Full Stack), Python, C, JavaScript</li>
+                <li><strong>Core Computer Science:</strong> Data Structures & Algorithms (DSA), Algorithmic Toolbox, Operating Systems</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js, REST APIs, FastAPI, Streamlit</li>
+                <li><strong>AI & ML Engineering:</strong> Gemini 2.5 Flash, LangChain, ChromaDB, Computer Vision, Semantic Retrieval</li>
+                <li><strong>Tools & Platforms:</strong> Git, GitHub, Shell Scripting, Docker</li>
+                <li><strong>Video Editing & Creative:</strong> Adobe After Effects, Wondershare Filmora, CapCut, UI/UX Design</li>
+                <li><strong>Office & Productivity:</strong> Microsoft Excel, Microsoft PowerPoint, Microsoft Word</li>
+            </ul>
+
+            <div class="resume-section-title">Key Projects</div>
+            <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                <div>
+                    <div style="font-weight: 700; font-size: 1.05rem;">AI Helpdesk Agent — RAG-Based Knowledge Assistant</div>
+                    <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-top: 0.3rem;">
+                        Developed a RAG-powered AI helpdesk using Gemini 2.5 Flash, LangChain, ChromaDB, FastAPI, and Streamlit for document-grounded question answering. Implemented semantic retrieval, query rewriting, source citations, confidence scoring, JWT/RBAC security, Docker deployment, and achieved 13/13 automated tests passing.
+                    </p>
+                </div>
+                <div>
+                    <div style="font-weight: 700; font-size: 1.05rem;">AI Crash Avoidance System</div>
+                    <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-top: 0.3rem;">
+                        Developed an AI-based safety system to detect potential collision risks and provide early warnings. Applied AI and computer vision concepts for real-time obstacle detection and risk monitoring. Focused on improving road safety through faster response and collision prevention.
+                    </p>
+                </div>
+                <div>
+                    <div style="font-weight: 700; font-size: 1.05rem;">EduPlan AI — AI-Powered Study Planner</div>
+                    <p style="font-size: 0.9rem; color: #555; line-height: 1.6; margin-top: 0.3rem;">
+                        Developed an AI-powered web platform that creates personalized study plans based on subjects, goals, priorities, and available time. Designed a clean, user-friendly interface with AI-based recommendations for effective learning and task management. Focused on improving students' productivity, time management, and study consistency.
+                    </p>
+                </div>
+            </div>
+
+            <div class="resume-section-title">Certifications</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem; color: #444;">
+                <li>• <strong>Design Fundamentals with AI – Adobe:</strong> Adobe | December 26, 2025 (100% score)</li>
+                <li>• <strong>Data Structures:</strong> University of California San Diego, Coursera | May 28, 2025</li>
+                <li>• <strong>Full Stack Web Development with AI:</strong> Internshala | 8 Weeks | 2024 (98%)</li>
+                <li>• <strong>Java Programming:</strong> September 15, 2025 – October 15, 2025</li>
+            </ul>
+
+            <div class="resume-section-title">Achievements</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem; color: #444;">
+                <li>• Represented IIT Kharagpur as a Campus Ambassador at my college and successfully conducted Kshitij Kascade, coordinating student participation and event activities.</li>
+                <li>• Secured 3rd Rank in India in the Honor of Kings competitive gaming competition.</li>
+            </ul>
+
+            <div class="resume-section-title">Languages</div>
+            <div style="font-size: 0.92rem; color: #444;">English · Hindi · Odia</div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <button onclick="window.print()" class="btn-primary-lg hover-target" style="border: none; cursor: pointer;">Print / Save as PDF 🖨️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Imports -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Textures and Custom App Logic -->
+    <script src="textures.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
