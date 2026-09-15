@@ -423,11 +423,11 @@ function resize() {
     const imgAspect = imageAspectRatio;
 
     if (width <= 768) {
-        // Mobile screen layout: Compact height and position in upper-middle behind GAU TAM
-        const targetHeight = visibleHeight * 0.44;
+        // Mobile screen layout: Medium size photo centered between GAU and TAM
+        const targetHeight = visibleHeight * 0.29;
         const targetWidth = targetHeight * imgAspect;
         portraitMesh.scale.set(targetWidth, targetHeight, 1.0);
-        portraitBaseY = visibleHeight * 0.08;
+        portraitBaseY = visibleHeight * 0.12;
     } else {
         // Desktop screen layout
         const targetHeight = visibleHeight * 0.78;

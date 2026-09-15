@@ -1470,8 +1470,19 @@ canvas#bg-canvas {
         min-height: 620px;
     }
     .hero-name-heading {
-        top: 35%;
-        font-size: clamp(2.8rem, 13.5vw, 5.5rem);
+        top: 34%;
+        font-size: clamp(2.4rem, 11.5vw, 4.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 0;
+    }
+    .hero-name-heading .outline {
+        margin-right: 1.4rem;
+    }
+    .hero-name-heading .fill {
+        margin-left: 1.4rem;
     }
     
     .hero-info-card { 
