@@ -24,6 +24,16 @@ window.addEventListener('mousemove', (e) => {
     targetY = e.clientY;
 });
 
+// Mobile & iPhone Touch Support for WebGL Spotlight Reveal
+function handleTouch(e) {
+    if (e.touches && e.touches.length > 0) {
+        targetX = e.touches[0].clientX;
+        targetY = e.touches[0].clientY;
+    }
+}
+window.addEventListener('touchstart', handleTouch, { passive: true });
+window.addEventListener('touchmove', handleTouch, { passive: true });
+
 function bindHoverTargets() {
     const hoverTargets = document.querySelectorAll('.hover-target, a, button, .flow-node, .highlight-card, .skill-category-card, .cert-card, .outline');
     hoverTargets.forEach(el => {
@@ -716,5 +726,24 @@ function closeResumeModal() {
 window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeResumeModal();
+        const menu = document.getElementById('mobile-menu');
+        if (menu && menu.classList.contains('active')) {
+            toggleMobileMenu();
+        }
     }
 });
+
+// Mobile Drawer Navigation Toggle
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const toggleBtn = document.querySelector('.nav-mobile-toggle');
+    if (menu) {
+        menu.classList.toggle('active');
+        if (toggleBtn) toggleBtn.classList.toggle('active');
+        if (menu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}

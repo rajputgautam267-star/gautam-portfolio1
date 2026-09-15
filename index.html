@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <title>GAUTAM | Full Stack AI Developer & Creative Engineer</title>
     
     <!-- Meta tags for social preview -->
@@ -47,7 +47,38 @@
             <button class="nav-resume-btn hover-target" onclick="openResumeModal()">Resume 📄</button>
             <a href="#contact" class="nav-cta hover-target">Let's Talk ↗</a>
         </div>
+
+        <!-- Mobile Hamburger Toggle (iPhone & Mobile Devices) -->
+        <button class="nav-mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+        </button>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="#" class="nav-brand" onclick="toggleMobileMenu()">GAUTAM.</a>
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close navigation menu">✕</button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#projects" onclick="toggleMobileMenu()">Work <span class="nav-count">[03]</span></a></li>
+            <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="#architecture" onclick="toggleMobileMenu()">Architecture</a></li>
+            <li><a href="#skills" onclick="toggleMobileMenu()">Skills</a></li>
+            <li><a href="#achievements" onclick="toggleMobileMenu()">Honors</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+            <button class="nav-resume-btn" onclick="toggleMobileMenu(); openResumeModal()">Resume 📄</button>
+            <a href="#contact" class="nav-cta" onclick="toggleMobileMenu()">Let's Talk ↗</a>
+        </div>
+        <div class="mobile-menu-socials">
+            <a href="https://github.com/rajputgautam267-star" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/gautam-186678158" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:rajputgautam267@gmail.com">Email ↗</a>
+        </div>
+    </div>
 
     <!-- MAIN PAGE WRAPPER (For Lenis Scroll Engine) -->
     <div class="main-wrapper">
